@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Navbar</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+
+		<div class="content">
+			<h1 class="contentTitle">Navbar</h1>
+			<section id="examples">
+				<section class="description">
+					<p class="more-info">A navbar is essential to a website that has multiple pages. It looks slick and easy to implement. It makes your website complete and creates user-friendliness.</p>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Horizontal Navigation Bar</h2>
+					<h3 style="margin-bottom:12px">The dashed line represents the webpage</h3>
+					<div class="border">
+						<nav id="navbarEx1">
+							<ul class="navUl1">
+							  <li class="navLi1"><a href="#">Home</a></li>
+							  <li class="navLi1"><a href="#">News</a></li>
+							  <li class="navLi1"><a href="#">Contact</a></li>
+							  <li class="navLi1"><a href="#">About</a></li>
+							</ul>
+						</nav>		
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Horizontal » HTML</h2>
+					<code>
+						/*Your nav tag should be put at the top of your body tag document*/<br>
+						&lt;nav&gt;<br>
+						&emsp;&emsp;&emsp;&lt;ul&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;News&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;/ul&gt;<br>
+						&lt;/nav&gt;<br>	
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Horizontal » CSS</h2>
+					<code>
+						.ul {<br>
+						&emsp;&emsp;&emsp;list-style-type: none;<br>
+						&emsp;&emsp;&emsp;margin: 0;<br>
+						&emsp;&emsp;&emsp;padding: 0;<br>
+						&emsp;&emsp;&emsp;overflow: hidden;<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						}<br>
+						<br>
+						.li {<br>
+						&emsp;&emsp;&emsp;float: left;<br>
+						}<br>
+						<br>
+						.li a {<br>
+						&emsp;&emsp;&emsp;display: block;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						&emsp;&emsp;&emsp;text-align: center;<br>
+						&emsp;&emsp;&emsp;padding: 14px 16px;<br>
+						&emsp;&emsp;&emsp;text-decoration: none;<br>
+						}<br>
+						<br>
+						.li a:hover {<br>
+						&emsp;&emsp;&emsp;color: #c2986b;<br>
+						&emsp;&emsp;&emsp;background-color: #000000;<br>
+						}<br>
+					</code>
+				</section>
+				<!-- <section class="description">
+					<p class="more-info">For the position of the footer it depends on the content of the website. The 'relative' position will put it at the bottom of your content that is within the natural flow of the webpage. When an element has a position of 'absolute' it is taken out of the natural flow of the webpage, so your footer will display above or behind 'absolute' elements. If you do not have enough content on your webpage to push the footer to the bottom, use 'absolute' for positioning your footer. If you want your footer to constantly be seen on the webpage, use 'fixed' for your position.</p>
+				</section> -->
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Vertical Navigation Bar</h2>
+					<h3 style="margin-bottom:12px">The dashed line represents the webpage</h3>
+					<div class="border">
+						<nav id="navbarEx2">
+							<ul class="navUl2">
+							  <li class="navLi2"><a href="#">Home</a></li>
+							  <li class="navLi2"><a href="#">News</a></li>
+							  <li class="navLi2"><a href="#">Contact</a></li>
+							  <li class="navLi2"><a href="#">About</a></li>
+							</ul>
+						</nav>		
+					</div>
+				</section>
+				<!-- <section class="description">
+						<p class="more-info">The code below does not accurately represent the above footer for the purposes of displaying an example, but it does represent the footer used on this website so it will work!</p>
+				</section> -->
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Vertical » HTML</h2>
+					<code>
+						/*Your nav tag should be put at the top of your body tag document*/<br>
+						&lt;nav&gt;<br>
+						&emsp;&emsp;&emsp;&lt;ul&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;News&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;/ul&gt;<br>
+						&lt;/nav&gt;<br>	
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Vertical » CSS</h2>
+					<code>
+						nav {<br>
+						&emsp;&emsp;&emsp;height: 100%;<br>
+						}<br>
+
+						.ul {<br>
+						&emsp;&emsp;&emsp;list-style-type: none;<br>
+						&emsp;&emsp;&emsp;margin: 0;<br>
+						&emsp;&emsp;&emsp;padding: 0;<br>
+						&emsp;&emsp;&emsp;width: 200px;<br>
+						&emsp;&emsp;&emsp;height: 100%;<br>
+						&emsp;&emsp;&emsp;overflow: auto;<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						}<br>
+						<br>
+						.li a {<br>
+						&emsp;&emsp;&emsp;display: block;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						&emsp;&emsp;&emsp;padding: 14px 16px;<br>
+						&emsp;&emsp;&emsp;text-decoration: none;<br>
+						}<br>
+						<br>
+						.li a:hover {<br>
+						&emsp;&emsp;&emsp;color: #c2986b;<br>
+						&emsp;&emsp;&emsp;background-color: #000000;<br>
+						}<br>
+					</code>
+				</section>
+				<section id="footerNav" class="example">
+					<a id="footerBtnHover" class="btn footerBtn" href="../Final%20Website/hover.html">Go back to 'Hover'</a>
+					<a id="footerBtnShadow" class="btn footerBtn" href="../Final%20Website/shadow.html">Move on to 'Shadow'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>

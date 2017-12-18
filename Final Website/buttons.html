@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Button</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1 class="contentTitle">Buttons</h1>
+			<section id="examples">
+				<section class="description">
+					<p class="more-info">Buttons are pretty standard when it comes to a website. In these examples anchor tags, or a tags, which are normally used for links, are used for these buttons. Adding padding and a background color gives the look of a button and is becoming more common than the button tag.</p>
+				</section>
+				<section class="css" id="forAllCSS">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">CSS Applied to All Buttons</h2>
+					<code>
+						.btn {<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						&emsp;&emsp;&emsp;border-radius: 4px;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						&emsp;&emsp;&emsp;padding: .5em 2em;<br>
+						&emsp;&emsp;&emsp;text-align: center;<br>
+						&emsp;&emsp;&emsp;text-decoration: none;<br>
+						&emsp;&emsp;&emsp;display: inline-block;<br>
+						&emsp;&emsp;&emsp;font-size: 1em;<br>
+						&emsp;&emsp;&emsp;cursor: pointer;<br>
+						&emsp;&emsp;&emsp;margin-top: 16px;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Size</h2>
+					<div>
+						<a class="nohover btn btn6 r-margin">0.5em</a>				
+						<a class="nohover btn btn7 r-margin">1em</a>				
+						<a class="nohover btn btn8 r-margin">1.5em</a>
+						<a class="nohover btn btn9">2em</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Size » HTML</h2>
+					<code>
+						&lt;a class="btn btn1" href="#"&gt;0.5em&lt;/a&gt;<br>			
+						&lt;a class="btn btn2" href="#"&gt;1em&lt;/a&gt;<br>				
+						&lt;a class="btn btn3" href="#"&gt;1.5em&lt;/a&gt;<br>
+						&lt;a class="btn btn4" href="#"&gt;2em&lt;/a&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Size » CSS</h2>
+					<code>
+						.btn1 {<br>
+						&emsp;&emsp;&emsp;font-size:.5em;<br>
+						}<br>
+						<br>
+						.btn2 {<br>
+						&emsp;&emsp;&emsp;font-size:1em;<br>
+						}<br>
+						<br>
+						.btn3 {<br>
+						&emsp;&emsp;&emsp;font-size:1.5em;<br>
+						}<br>
+						<br>
+						.btn4 {<br>
+						&emsp;&emsp;&emsp;font-size:2em;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Padding</h2>
+					<div>
+						<a class="nohover btn btn1 r-margin">0.5em 1.5em</a>				
+						<a class="nohover btn btn2 r-margin">1em 2em</a>				
+						<a class="nohover btn btn3 r-margin">1.5em 3em</a>
+						<a class="nohover btn btn4 r-margin">2em 4em</a>
+						<a class="nohover btn btn5">1.5em</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Padding » HTML</h2>
+					<code>
+						&lt;a class="btn btn1" href="#"&gt;0.5em 1.5em&lt;/a&gt;<br>		
+						&lt;a class="btn btn2" href="#"&gt;1em 2em&lt;/a&gt;<br>		
+						&lt;a class="btn btn3" href="#"&gt;1.5em 3em&lt;/a&gt;<br>
+						&lt;a class="btn btn4" href="#"&gt;2em 4em&lt;/a&gt;<br>
+						&lt;a class="btn btn5" href="#"&gt;1.5em&lt;/a&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Padding » CSS</h2>
+					<code>
+						.btn1 {<br>
+						&emsp;&emsp;&emsp;padding: .5em 1.5em;<br>
+						}<br>
+						<br>
+						.btn2 {<br>
+						&emsp;&emsp;&emsp;padding: 1em 2em;<br>
+						}<br>
+						<br>
+						.btn3 {<br>
+						&emsp;&emsp;&emsp;padding: 1.5em 3em;<br>
+						}<br>
+						<br>
+						.btn4 {<br>
+						&emsp;&emsp;&emsp;padding: 2em 4em;<br>
+						}<br>
+						<br>
+						.btn5 {<br>
+						&emsp;&emsp;&emsp;padding: 1.5em;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Color</h2>
+					<div>
+						<a class="btn btn10 r-margin">Button1</a>				
+						<a class="btn btn11 r-margin">Button2</a>				
+						<a class="btn btn12 r-margin">Button3</a>
+						<a class="btn btn13 r-margin">Button4</a>
+						<a class="btn btn14">Button5</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Color » HTML</h2>
+					<code>
+						&lt;a class="btn btn1" href="#"&gt;Button1&lt;/a&gt;<br>		
+						&lt;a class="btn btn2" href="#"&gt;Button2&lt;/a&gt;<br>		
+						&lt;a class="btn btn3" href="#"&gt;Button3&lt;/a&gt;<br>
+						&lt;a class="btn btn4" href="#"&gt;Button4&lt;/a&gt;<br>
+						&lt;a class="btn btn5" href="#"&gt;Button5&lt;/a&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Color » CSS</h2>
+					<code>
+						.btn1 {<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						}<br>
+						<br>
+						.btn2 {<br>
+						&emsp;&emsp;&emsp;background-color: #000000;<br>
+						&emsp;&emsp;&emsp;color: #c2986b;<br>
+						}<br>
+						<br>
+						.btn3 {<br>
+						&emsp;&emsp;&emsp;background-color: #f1debe;<br>
+						&emsp;&emsp;&emsp;color: #a8a197;<br>
+						}<br>
+						<br>
+						.btn4 {<br>
+						&emsp;&emsp;&emsp;background-color: #572229;<br>
+						&emsp;&emsp;&emsp;color: #ffffff;<br>
+						}<br>
+						<br>
+						.btn5 {<br>
+						&emsp;&emsp;&emsp;background-color: #c61010;<br>
+						&emsp;&emsp;&emsp;color: #2eccae;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Disabled Buttons</h2>
+					<div>
+						<a class="nohover btn btn15 r-margin">Normal Button</a>				
+						<a class="nohover btn btn16">Disabled Button</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Disabled » HTML</h2>
+					<code>
+						&lt;a class="btn btn1" href="#"&gt;Normal Button&lt;/a&gt;<br>		
+						&lt;a class="btn btn2" href="#"&gt;Disabled Button&lt;/a&gt;<br>		
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Disabled » CSS</h2>
+					<code>
+						.btn1 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all buttons*/<br>
+						}<br>
+						<br>
+						.btn2 {<br>
+						&emsp;&emsp;&emsp;opacity: 0.6;<br>
+						&emsp;&emsp;&emsp;cursor: not-allowed;<br>
+						&emsp;&emsp;&emsp;pointer-events: none;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Width</h2>
+					<div>
+						<a class="nohover btn btn17 r-margin">100px</a>				
+						<a class="nohover btn btn18 r-margin">10em</a>				
+						<a class="nohover btn btn19">50%</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Width » HTML</h2>
+					<code>
+						&lt;a class="btn btn1" href="#"&gt;100px&lt;/a&gt;<br>		
+						&lt;a class="btn btn2" href="#"&gt;10em&lt;/a&gt;<br>		
+						&lt;a class="btn btn3" href="#"&gt;50%&lt;/a&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Width » CSS</h2>
+					<code>
+						.btn1 {<br>
+						&emsp;&emsp;&emsp;width: 100px<br>
+						}<br>
+						<br>
+						.btn2 {<br>
+						&emsp;&emsp;&emsp;width: 10em<br>
+						}<br>
+						<br>
+						.btn3 {<br>
+						&emsp;&emsp;&emsp;width: 50%<br>
+						}<br>
+					</code>
+				</section>
+				<section id="footerNav" class="example">
+					<a id="footerBtnClick" class="btn footerBtn" href="../Final%20Website/click.html">Move on to 'Click'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>
