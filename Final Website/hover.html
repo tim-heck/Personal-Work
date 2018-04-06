@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Hover</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+		
+		<div class="content">
+			<h1 class="contentTitle">Hover</h1>
+			<section id="examples">
+				<section class="example">
+					<h3>*Note: Transitions are being used! Go to the Advanced > Transition to learn more!</h3>
+				</section>
+				<section class="description">
+					<p class="more-info">The hover effect is very similar to the click effect, only it happens when you hover over the element with the hover effect. Again, mostly it's a background or text color change but sometimes it's a shadow added or a translation. It can also be applied to more elements than just links or buttons.</p>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">CSS Applied to All Buttons</h2>
+					<code>
+						.btn {<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						&emsp;&emsp;&emsp;border-radius: 4px;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						&emsp;&emsp;&emsp;padding: .5em 2em;<br>
+						&emsp;&emsp;&emsp;text-align: center;<br>
+						&emsp;&emsp;&emsp;text-decoration: none;<br>
+						&emsp;&emsp;&emsp;display: inline-block;<br>
+						&emsp;&emsp;&emsp;font-size: 1em;<br>
+						&emsp;&emsp;&emsp;cursor: pointer;<br>
+						&emsp;&emsp;&emsp;margin-top: 16px;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">CSS Applied to All Links</h2>
+					<code>
+						a {<br>
+						&emsp;&emsp;&emsp;text-decoration: none;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Links</h2>
+					<div>
+						<a class="link3 r-margin">Hover over me!</a>
+						<a class="link4 r-margin">Hover over me!</a>
+						<a class="link5">Hover over me!</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Links » HTML</h2>
+					<code>
+						&lt;a class="link1" href="#"&gt;Hover over me!&lt;/a&gt;<br>
+						&lt;a class="link2" href="#"&gt;Hover over me!&lt;/a&gt;<br>
+						&lt;a class="link3" href="#"&gt;Hover over me!&lt;/a&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Links » CSS</h2>
+					<code>
+						.link1 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all links*/<br>
+						}<br>
+						<br>
+						.link1:hover {<br>
+						&emsp;&emsp;&emsp;text-decoration: underline;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						}<br>
+						<br>
+						.link2 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all links*/<br>
+						}<br>
+						<br>
+						.link2:hover {<br>
+						&emsp;&emsp;&emsp;text-decoration: underline;<br>
+						&emsp;&emsp;&emsp;color: blue;<br>
+						}<br>
+						<br>
+						.link3 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all links*/<br>
+						}<br>
+						<br>
+						.link3:hover {<br>
+						&emsp;&emsp;&emsp;color: #c2986b;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Buttons</h2>
+					<h3>*Note: The '!important' overrides any CSS that was prevously applied to the element.</h3>
+					<div>
+						<a class="btn btn22 r-margin">Hover over me!</a>
+						<a class="btn btn23 r-margin">Hover over me!</a>
+						<a class="btn btn24">Hover over me!</a>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Buttons » HTML</h2>
+					<code>
+						&lt;a class="btn btn1" href="#"&gt;Hover over me!&lt;/a&gt;<br>
+						&lt;a class="btn btn2" href="#"&gt;Hover over me!&lt;/a&gt;<br>
+						&lt;a class="btn btn3" href="#"&gt;Hover over me!&lt;/a&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Buttons » CSS</h2>
+					<code>
+						.btn1 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all buttons*/<br>
+						}<br>
+						<br>
+						.btn1:hover {<br>
+						&emsp;&emsp;&emsp;text-decoration: underline;<br>
+						&emsp;&emsp;&emsp;background-color: green!important;<br>
+						&emsp;&emsp;&emsp;color: #ffffff!important;<br>
+						}<br>
+						<br>
+						.btn2 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all buttons*/<br>
+						}<br>
+						<br>
+						.btn2:hover {<br>
+						&emsp;&emsp;&emsp;font-family: Open Sans, sans-serif!important;<br>
+						&emsp;&emsp;&emsp;background-color: #000000!important;<br>
+						&emsp;&emsp;&emsp;color: yellow!important;<br>
+						}<br>
+						<br>
+						.btn3 {<br>
+						&emsp;&emsp;&emsp;/*uses CSS for all buttons*/<br>
+						}<br>
+						<br>
+						.btn3:hover {<br>
+						&emsp;&emsp;&emsp;padding: 2em 2.5em;<br>
+						&emsp;&emsp;&emsp;transition: .5s; /*Duration of the changing size*/<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Many Different Things!</h2>
+					<div>
+						<div class="div1">Hover over me!</div>
+						<section class="section1">Hover over me!</section>
+						<h1 class="h1one">Hover over me!</h1>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Many Things! » HTML</h2>
+					<code>
+						&lt;div class="div1" href="#"&gt;Hover over me!&lt;/div&gt;<br>
+						&lt;section class="section1" href="#"&gt;Hover over me!&lt;/section&gt;<br>
+						&lt;h1 class="h1one" href="#"&gt;Hover over me!&lt;/h1&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Many Things! » CSS</h2>
+					<code>
+						.div1 {<br>
+						&emsp;&emsp;&emsp;font-family: "Montserrat", sans-serif;<br>
+						&emsp;&emsp;&emsp;padding: 1em;<br>
+						&emsp;&emsp;&emsp;margin: 0 0 1em 0;<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						&emsp;&emsp;&emsp;border-radius: 4px;<br>
+						}<br>
+						<br>
+						.div1:hover {<br>
+						&emsp;&emsp;&emsp;padding: 1.5em;<br>
+						&emsp;&emsp;&emsp;margin-right: 75%;<br>
+						&emsp;&emsp;&emsp;background-color: blue;<br>
+						&emsp;&emsp;&emsp;color: #ffffff;<br>
+						&emsp;&emsp;&emsp;transition: .8s;<br>
+						}<br>
+						<br>
+						.seciton1 {<br>
+						&emsp;&emsp;&emsp;font-family: "Montserrat", sans-serif;<br>
+						&emsp;&emsp;&emsp;background-color: #000000;<br>
+						&emsp;&emsp;&emsp;color: #ffffff;<br>
+						&emsp;&emsp;&emsp;border-radius: 4px;<br>
+						&emsp;&emsp;&emsp;padding: 1em;<br>
+						&emsp;&emsp;&emsp;margin: 0 30% 1em 30%;<br>
+						}<br>
+						<br>
+						.section1:hover {<br>
+						&emsp;&emsp;&emsp;padding: 1.5em 1em;<br>
+						&emsp;&emsp;&emsp;margin: 0 60% 1em 0;<br>
+						&emsp;&emsp;&emsp;background-color: #ff694d;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						&emsp;&emsp;&emsp;transition: .8s;<br>
+						}<br>
+						<br>
+						.h1one {<br>
+						&emsp;&emsp;&emsp;width: 8em;<br>
+						}<br>
+						<br>
+						.h1one:hover {<br>
+						&emsp;&emsp;&emsp;font-size: 2em;<br>
+						&emsp;&emsp;&emsp;padding: .75em;<br>
+						&emsp;&emsp;&emsp;background-color: #c2986b;<br>
+						&emsp;&emsp;&emsp;border-radius: 4px;<br>
+						&emsp;&emsp;&emsp;transition: .8s;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="description">
+					<p class="more-info">There are many things you can do with hover in CSS. It can be applied to almost any type of element. Experiment with ":hover" with elements on your website and find all of the different possibilites that are available!</p>
+				</section>
+				<section id="footerNav" class="example">
+					<a id="footerBtnClick" class="btn footerBtn" href="../Final%20Website/click.html">Go back to 'Click'</a>
+					<a class="btn footerBtn" href="../Final%20Website/navbar.html">Move on to 'Navbar'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Navbar</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+		
+		<div class="content">
+			<h1 class="contentTitle">Hidden Nav</h1>
+			<section id="examples">
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Hidden Navbar</h2>
+					<div id="hiddenNavPage" class="border">
+					<nav id="hiddenNav">
+						<div class="hiddenNavbar">
+							<input type="checkbox" id="checkboxHiddenNav"/>
+							<ul class="hiddenSidenav">
+								<label for="beginCheckboxSide"><a href="#"><b>Beginner</b></a></label>
+								<label for="advanceCheckboxSide"><a href="#"><b>Advanced</b></a></label>
+								<label for="expertCheckboxSide"><a href="#"><b>Expert</b></a></label>
+								<label for="aboutCheckboxSide"><a href="#"><b>About Me</b></a></label>
+							</ul>
+							<section>
+								<label id="hiddenMenu" for="checkboxHiddenNav">Menu</label>
+								<label id="hiddenClose" for="checkboxHiddenNav">Close</label>
+							</section>
+						</div>
+					</nav>
+				</div>
+				</section>
+				<section class="description" style="width:100%;">
+					<h3 style="margin-bottom:12px">The dashed line represents the webpage</h3>
+					<p class="more-info">This kind of hidden nav does not use any JavaScript so it is slightly hacky. It uses a hidden checkbox linked to the MENU/CLOSE button to change the opacity of the "hidden" menu along with a transform to get that translation that occurs.</p>
+					<br>
+					<p class="more-info">The code below does not accurately represent the above hidden nav for the purposes of displaying an example, but it will replicate the hidden nav I use for this website!</p>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Hidden Navbar » HTML</h2>
+					<code>
+						&lt;nav&gt;<br>
+						&emsp;&emsp;&emsp;&lt;input type="checkbox" id="checkboxNav"/&gt;<br>
+						&emsp;&emsp;&emsp;&lt;ul class="sidenav"&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;label for="beginCheckboxSide"&gt;&lt;a href="#"&gt;&lt;b&gt;Beginner&lt;/b&gt;&lt;/a&gt;&lt;/label&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;label for="advanceCheckboxSide"&gt;&lt;a href="#"&gt;&lt;b&gt;Advanced&lt;/b&gt;&lt;/a&gt;&lt;/label&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;label for="expertCheckboxSide">&lt;a href="#"&gt;&lt;b&gt;Expert&lt;/b&gt;&lt;/a&gt;&lt;/label&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;label for="aboutCheckboxSide">&lt;a href="#"&gt;&lt;b&gt;About Me&lt;/b&gt;&lt;/a&gt;&lt;/label&gt;<br>
+						&emsp;&emsp;&emsp;&lt;/ul&gt;<br>
+						&emsp;&emsp;&emsp;&lt;section&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;label id="menu" for="checkboxNav">Menu&lt;/label&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;label id="close" for="checkboxNav">Close&lt;/label&gt;<br>
+						&emsp;&emsp;&emsp;&lt;/section&gt;<br>
+						&lt;/nav&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Hidden Navbar » CSS</h2>
+					<code>
+						#hiddenNav {<br>
+					    &emsp;&emsp;&emsp;background-color: #ffffff;<br>
+					    &emsp;&emsp;&emsp;margin: 0 auto;<br>
+					    &emsp;&emsp;&emsp;padding: 1em;<br>
+					    &emsp;&emsp;&emsp;height: 2em;<br>
+						}<br>
+						<br>
+						.hiddenNavbar section {<br>
+					    &emsp;&emsp;&emsp;position: relative;<br> 
+					    &emsp;&emsp;&emsp;transition: all 0.25s;<br>
+						}<br>
+						<br>
+						.hiddenNavbar section label#hiddenMenu {<br>
+					    &emsp;&emsp;&emsp;float: left;<br>
+					    &emsp;&emsp;&emsp;color: #c2986b;<br>
+					    &emsp;&emsp;&emsp;background-color: #000000;<br>
+					    &emsp;&emsp;&emsp;text-align: center;<br>
+					    &emsp;&emsp;&emsp;font-size: 14px;<br>
+					    &emsp;&emsp;&emsp;border-radius: 4px;<br>
+					    &emsp;&emsp;&emsp;display: block;<br>
+					    &emsp;&emsp;&emsp;padding: 8px 8px;<br>
+					    &emsp;&emsp;&emsp;margin: 0;<br>
+					    &emsp;&emsp;&emsp;cursor: pointer;<br>
+					    &emsp;&emsp;&emsp;text-transform: uppercase;<br>
+					    &emsp;&emsp;&emsp;transition: all 0.4s;<br>
+						}<br>
+						<br>
+						.hiddenNavbar section label#hiddenClose {<br>
+					    &emsp;&emsp;&emsp;opacity: 0;<br>
+					    &emsp;&emsp;&emsp;float: left;<br>
+					    &emsp;&emsp;&emsp;color: #c2986b;<br>
+					    &emsp;&emsp;&emsp;background-color: #000000;<br>
+					    &emsp;&emsp;&emsp;text-align: center;<br>
+					    &emsp;&emsp;&emsp;font-size: 14px;<br>
+					    &emsp;&emsp;&emsp;border-radius: 4px;<br>
+					    &emsp;&emsp;&emsp;display: block;<br>
+					    &emsp;&emsp;&emsp;padding: 8px 8px;<br>
+					    &emsp;&emsp;&emsp;margin: 0;<br>
+					    &emsp;&emsp;&emsp;cursor: pointer;<br>
+					    &emsp;&emsp;&emsp;text-transform: uppercase;<br>
+					    &emsp;&emsp;&emsp;transition: all 0.4s;<br>
+					    &emsp;&emsp;&emsp;position: absolute;<br>
+						}<br>
+						<br>
+						.hiddenSidenav {<br>
+					    &emsp;&emsp;&emsp;background-color: #ffffff;<br>
+					    &emsp;&emsp;&emsp;opacity: 0;<br>
+					    &emsp;&emsp;&emsp;display: block;<br>
+					    &emsp;&emsp;&emsp;height: auto;<br>
+					    &emsp;&emsp;&emsp;margin: 0;<br>
+					    &emsp;&emsp;&emsp;padding: 0;<br>
+					    &emsp;&emsp;&emsp;position: absolute;<br>
+					    &emsp;&emsp;&emsp;top: 20.2em;<br>
+					    &emsp;&emsp;&emsp;left: -.08em;<br>
+					    &emsp;&emsp;&emsp;transform: translateX(-50px);<br>
+					    &emsp;&emsp;&emsp;transition: all 0.4s;<br>
+						}<br>
+						<br>
+						.hiddenSidenav label {<br>
+					    &emsp;&emsp;&emsp;list-style-type: none;<br>
+						}<br>
+						<br>
+						.hiddenSidenav a { <br>
+					    &emsp;&emsp;&emsp;text-decoration: none;<br>
+						}<br>
+						<br>
+						.hiddenSidenav b {<br>
+					    &emsp;&emsp;&emsp;color: #000000;<br>
+					    &emsp;&emsp;&emsp;background-color: #ffffff;<br>
+					    &emsp;&emsp;&emsp;font-family: Montserrat, sans-serif;<br>
+					    &emsp;&emsp;&emsp;display: block;<br>
+					    &emsp;&emsp;&emsp;opacity: 0;<br>
+					    &emsp;&emsp;&emsp;width: 8em;<br>
+					    &emsp;&emsp;&emsp;padding: 10px 0px 10px 40px;<br>
+					    &emsp;&emsp;&emsp;transform: translateX(-50px); <br>
+					    &emsp;&emsp;&emsp;transition: all 0.4s;<br>
+						}<br>
+						<br>
+						.hiddenSidenav b:hover {<br>
+					    &emsp;&emsp;&emsp;color: #c2986b;<br>
+					    &emsp;&emsp;&emsp;background-color: #000000;<br>
+						}<br>
+						<br>
+						b.active {<br>
+					    &emsp;&emsp;&emsp;background-color: #000000;<br>
+					    &emsp;&emsp;&emsp;color: #c2986b;<br>
+					    &emsp;&emsp;&emsp;cursor: default!important;<br>
+					    &emsp;&emsp;&emsp;pointer-events: none!important;<br>
+						}<br>
+						<br>
+						#checkboxHiddenNav {<br>
+					    &emsp;&emsp;&emsp;display: none;<br>
+						}<br>
+						<br>
+						#checkboxHiddenNav:checked ~ section label#hiddenMenu {<br>
+					    &emsp;&emsp;&emsp;opacity: 0;<br>
+						}<br>
+						<br>
+						#checkboxHiddenNav:checked ~ section label#hiddenClose {<br>
+					    &emsp;&emsp;&emsp;opacity: 1;<br>
+						}<br>
+						<br>
+						#checkboxHiddenNav:checked ~ .hiddenSidenav b {<br>
+					    &emsp;&emsp;&emsp;opacity: 1;<br>
+					    &emsp;&emsp;&emsp;transform: translateX(0);<br>
+						}<br>
+						<br>
+						#checkboxHiddenNav:checked ~ .hiddenSidenav {<br>
+					    &emsp;&emsp;&emsp;opacity: 1;<br>
+					    &emsp;&emsp;&emsp;transform: translateX(0);<br>
+						}<br>
+					</code>
+				</section>
+				<section id="footerNav" class="example">
+					<a class="btn footerBtn" href="../Final%20Website/flexbox.html">Go back to 'Flexbox'</a>
+					<a id="footerBtnTransform" class="btn footerBtn" href="../Final%20Website/transforms.html">Move on to 'Transforms'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | About Me</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1 class="contentTitle">About Me</h1>
+			<section id="examples">
+				<section class="description just-text">
+					<p class="more-info">I am currently a student and Bethel University in Saint Paul, Minnesota. I am studying Computer Science and minoring in Graphic Design and Math. I have a passion for design and photography that I hope to integrate into the Computer Science world. My hometown is Burnsville, MN, but I currently reside in Arden Hills, MN, one minute from Bethel's campus. It's a tough commute.</p>
+				</section>
+				<section id="image" class="description just-text">
+					<img class="" src="../Final%20Website/Images/aboutImageCropped.jpg" style="width:100%">
+				</section>
+				<section class="description just-text">
+					<p class="more-info">I love Jesus, my family, autumn, and kicking it with my best friends. I am a big gamer. Xbox is where I feel at home, but I’m branching out to the Playstation side. I play guitar and ukulele, and also sing a little. If I could choose to do any job for the rest of my life, I would play guitar and sing in a band and love every second.</p>
+				</section>
+				<section class="description just-text" style="width:100%;text-align:center;">
+					<p class="more-info">If you would like to contact me, please email me at tih99924@bethel.edu!</p>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>

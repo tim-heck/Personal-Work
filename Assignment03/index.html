@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width">
+  	<title>Assignment03 | Tim Heck</title>
+  	<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet"/>
+  	<script language="javascript" type="text/javascript" src="script.js"></script>
+  	<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container">
+		<form>
+			<ul class="input-group">
+				<li>First Name: <input class="input-text" type="text" id="firstName"/></li>
+				<li>Last Name: <input class="input-text" type="text" id="lastName"/></li>
+				<li>Favorite Star Wars Character: <input class="input-text" type="text" id="character"/></li>
+			</ul>
+			<div class="btn-group">
+				<input class="btn" type="button" value="Force Push" onclick="forcePush()"/>
+				<input class="btn" type="button" value="Force Pull" onclick="forcePull()"/>
+				<input class="btn" type="button" value="Force Read" onclick="forceRead()"/>
+				<input class="btn" type="button" value="Force Delete" onclick="forceDelete()"/>
+			</div>
+		</form>
+
+		<div id="formOneResults"></div>
+		<div id="formOneErrors"></div>
+
+		<br/><br/>
+		<form>
+			<ul class="input-group">
+				<li>View Date: <input class="input-text" type="text" id="viewDate"/></li>
+			</ul>
+			<div class="btn-group">
+				<input class="btn" type="button" value="Force Insight" onclick="forceInsight()"/>
+				<input class="btn" type="button" value="Watch Movies" onclick="watchMovies()"/>
+			</div>
+		</form>
+
+		<div id="formTwoResults"></div>
+		<div id="formTwoErrors"></div>
+
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Footer</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1 class="contentTitle">Footer</h1>
+			<section id="examples">
+				<section class="description">
+					<p class="more-info">The footer is also an essential piece to a website. Like the navbar, it's something that completes your site. The experience of the user is what is key to a website, the footer will allow the user to know where the bottom of the page is as well as containing information that the user may need to see.</p>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Footer that stays at the bottoms of the page</h2>
+					<h3 style="margin-bottom:12px">The dashed line represents the webpage</h3>
+					<h3 style="margin-bottom:12px">*Note: Flex-box is being used! Go to the Expert > Flex-box to learn more!</h3>
+					<div class="border">
+						<footer id="footerEx">
+							<h6 class="footer">Footer</h6>
+						</footer>		
+					</div>
+				</section>
+				<section class="description">
+						<p class="more-info">The code below does not accurately represent the above footer for the purposes of displaying an example, but it does represent the footer used on this website so it will work!</p>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Footer » HTML</h2>
+					<code>
+						/*Your footer tag should be put at the bottom of your html document, but still inside the body tag*/<br>
+						&lt;footer&gt;<br>
+						&emsp;&emsp;&emsp;&lt;h6 class="footer"&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;a href="../Final%20Website/about.html"&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Contact Me&lt;/a&gt; | &lt;a href="https://<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;www.instagram.com/timtheheck/"&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Follow Me on Instagram&lt;/a&gt;<br>
+						&emsp;&emsp;&emsp;&lt;/h6&gt;<br>
+						&lt;/footer&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Footer » CSS</h2>
+					<code>
+						h6.footer {<br>
+						&emsp;&emsp;&emsp;width: auto;<br>
+						&emsp;&emsp;&emsp;padding: 1.5em 0em 1.5em 0em;<br>
+						&emsp;&emsp;&emsp;font-size: 0.75em<br>
+						}<br>
+						<br>
+						footer {<br>
+						&emsp;&emsp;&emsp;display: flex;<br>
+						&emsp;&emsp;&emsp;flex-direction: row;<br>
+						&emsp;&emsp;&emsp;flex-wrap: wrap;<br>
+						&emsp;&emsp;&emsp;justify-content: center;<br>
+						&emsp;&emsp;&emsp;background-color: #ffffff;<br>
+						&emsp;&emsp;&emsp;width: 100%;<br>
+						&emsp;&emsp;&emsp;position: relative; /*The position can vary depending on the webpage*/<br>
+						&emsp;&emsp;&emsp;right: 0;<br>
+						&emsp;&emsp;&emsp;bottom: 0;<br>
+						&emsp;&emsp;&emsp;left: 0;<br>
+						&emsp;&emsp;&emsp;height: 3em;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="description">
+						<p class="more-info">For the position of the footer it depends on the content of the website. The 'relative' position will put it at the bottom of your content that is within the natural flow of the webpage. When an element has a position of 'absolute' it is taken out of the natural flow of the webpage, so your footer will display above or behind 'absolute' elements. If you do not have enough content on your webpage to push the footer to the bottom, use 'absolute' for positioning your footer. If you want your footer to constantly be seen on the webpage, use 'fixed' for your position.</p>
+					</section>
+				<section id="footerNav" class="example">
+					<a id="footerBtnShadow" class="btn footerBtn" href="../Final%20Website/shadow.html">Go Back to 'Shadow'</a>
+					<a id="footerBtnGradient" class="btn footerBtn" href="../Final%20Website/gradients.html">Move on to 'Gradients'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>

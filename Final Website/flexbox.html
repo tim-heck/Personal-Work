@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Flex-box</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1 class="contentTitle">Flex-box</h1>
+			<section id="examples">
+				<section class="description">
+					<p class="more-info">Flex-box is an amazing styling method. It creates an nice organized interface that is fully responsive. It works by creating a container, applying flex-box to that container, and filling it will items that will adopt the flex-box styling. It has many different styling techniques that can be applied to the items within the container with flex-box applied to it. If you are on a desktop, adjust the width of your browser to see how flex-box reacts!</p>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Flex-box Row</h2>
+					<ul id="flex-container1">
+					  <li class="flex-item">1</li>
+					  <li class="flex-item">2</li>
+					  <li class="flex-item">3</li>
+					  <li class="flex-item">4</li>
+					  <li class="flex-item">5</li>
+					  <li class="flex-item">6</li>
+					</ul>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex-box Row » HTML</h2>
+					<code>
+						&lt;ul id="flex-container1"&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;1&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;2&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;3&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;4&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;5&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;6&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex-box Row » CSS</h2>
+					<code>
+						#flex-container1 {<br>
+						&emsp;&emsp;&emsp;background-color: transparent;<br>
+						&emsp;&emsp;&emsp;padding: 0;<br>
+						&emsp;&emsp;&emsp;margin: 0;<br>
+						&emsp;&emsp;&emsp;list-style: none;<br>					  
+						&emsp;&emsp;&emsp;display: -webkit-box;<br>
+						&emsp;&emsp;&emsp;display: -moz-box;<br>
+						&emsp;&emsp;&emsp;display: -ms-flexbox;<br>
+						&emsp;&emsp;&emsp;display: -webkit-flex;<br>
+						&emsp;&emsp;&emsp;display: flex;<br>						
+						&emsp;&emsp;&emsp;-webkit-flex-flow: row wrap;<br>
+						&emsp;&emsp;&emsp;justify-content: space-around;<br>
+						}<br>
+						<br>
+						.flex-item {<br>
+						&emsp;&emsp;&emsp;background: #000000;<br>
+						&emsp;&emsp;&emsp;padding: 1em;<br>
+						&emsp;&emsp;&emsp;width: 4.5em;<br>
+						&emsp;&emsp;&emsp;height: 3em;<br>
+						&emsp;&emsp;&emsp;margin-top: 12px;<br>
+						&emsp;&emsp;&emsp;color: #c2986b;<br>
+						&emsp;&emsp;&emsp;font-weight: bold;<br>
+						&emsp;&emsp;&emsp;font-size: 2em;<br>
+						&emsp;&emsp;&emsp;text-align: center;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle">Flex-box Column</h2>
+					<ul id="flex-container2">
+					  	<li class="flex-item">1</li>
+					  	<li class="flex-item flex-item1">2</li>
+					  	<li class="flex-item flex-item2">3</li>
+					  	<li class="flex-item">4</li>
+					  	<li class="flex-item">5</li>
+					  	<li class="flex-item flex-item3">6</li>
+					</ul>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex-box Column » HTML</h2>
+					<code>
+						&lt;ul id="flex-container2"&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;1&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item flex-item1"&gt;2&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item flex-item2"&gt;3&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;4&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item"&gt;5&lt;/li&gt;<br>
+						&emsp;&emsp;&emsp;&lt;li class="flex-item flex-item3"&gt;6&lt;/li&gt;<br>
+						&lt;/ul&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex-box Column » CSS</h2>
+					<code>
+						#flex-container2 {<br>
+						&emsp;&emsp;&emsp;background-color: transparent;<br>
+						&emsp;&emsp;&emsp;padding: 0;<br>
+						&emsp;&emsp;&emsp;margin: 0;<br>
+						&emsp;&emsp;&emsp;list-style: none;<br>					  
+						&emsp;&emsp;&emsp;display: -webkit-box;<br>
+						&emsp;&emsp;&emsp;display: -moz-box;<br>
+						&emsp;&emsp;&emsp;display: -ms-flexbox;<br>
+						&emsp;&emsp;&emsp;display: -webkit-flex;<br>
+						&emsp;&emsp;&emsp;display: flex;<br>						
+						&emsp;&emsp;&emsp;-webkit-flex-flow: column wrap;<br>
+						&emsp;&emsp;&emsp;justify-content: space-around;<br>
+						}<br>
+						<br>
+						.flex-item {<br>
+						&emsp;&emsp;&emsp;background: #000000;<br>
+						&emsp;&emsp;&emsp;padding: 1em;<br>
+						&emsp;&emsp;&emsp;width: 4.5em;<br>
+						&emsp;&emsp;&emsp;height: 3em;<br>
+						&emsp;&emsp;&emsp;margin-top: 12px;<br>
+						&emsp;&emsp;&emsp;color: #c2986b;<br>
+						&emsp;&emsp;&emsp;font-weight: bold;<br>
+						&emsp;&emsp;&emsp;font-size: 2em;<br>
+						&emsp;&emsp;&emsp;text-align: center;<br>
+						}<br>
+						<br>
+						.flex-item1 {<br>
+						&emsp;&emsp;&emsp;width: 33%;<br>
+						}<br>
+						<br>
+						.flex-item2 {<br>
+						&emsp;&emsp;&emsp;width: 50%;<br>
+						}<br>
+						<br>
+						.flex-item3 {<br>
+						&emsp;&emsp;&emsp;width: 70%;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex Page</h2>
+					<div class="flex-wrapper">
+						<header class="flex-header">Header</header>
+						<article class="flex-main">
+						   	<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>  
+						</article>
+						<aside class="aside aside-1">Aside 1</aside>
+						<aside class="aside aside-2">Aside 2</aside>
+						<footer class="flex-footer">Footer</footer>
+					</div>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex Page » HTML</h2>
+					<code>
+						&lt;div class="wrapper"&gt;<br>
+						&emsp;&emsp;&emsp;&lt;header class="header"&gt;Header&lt;/header&gt;<br>
+						&emsp;&emsp;&emsp;&lt;article class="main"&gt;<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.&lt;/p&gt;<br>
+						&emsp;&emsp;&emsp;&lt;/article&gt;<br>
+						&emsp;&emsp;&emsp;&lt;aside class="aside aside-1"&gt;Aside 1&lt;/aside&gt;<br>
+						&emsp;&emsp;&emsp;&lt;aside class="aside aside-2"&gt;Aside 2&lt;/aside&gt;<br>
+						&emsp;&emsp;&emsp;&lt;footer class="footer"&gt;Footer&lt;/footer&gt;<br>
+						&lt;/div&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Flex Page » CSS</h2>
+					<code>
+						.flex-wrapper {<br>
+						&emsp;&emsp;&emsp;display: -webkit-box;<br>
+						&emsp;&emsp;&emsp;display: -moz-box;<br>
+						&emsp;&emsp;&emsp;display: -ms-flexbox;<br>
+						&emsp;&emsp;&emsp;display: -webkit-flex;<br>
+						&emsp;&emsp;&emsp;display: flex;<br>   
+						&emsp;&emsp;&emsp;-webkit-flex-flow: row wrap;<br>
+						&emsp;&emsp;&emsp;flex-flow: row wrap;<br>
+						&emsp;&emsp;&emsp;font-weight: bold;<br>
+						&emsp;&emsp;&emsp;text-align: center;<br>
+						}<br>
+						<br>
+						.flex-wrapper > * {<br>
+						&emsp;&emsp;&emsp;padding: 10px;<br>
+						&emsp;&emsp;&emsp;flex: 1 100%;<br>
+						}<br>
+						<br>
+						.flex-header {<br>
+						&emsp;&emsp;&emsp;background: #ffffff;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						}<br>
+						<br>
+						.flex-footer {<br>
+						&emsp;&emsp;&emsp;background: #ffffff;<br>
+						&emsp;&emsp;&emsp;color: #000000;<br>
+						}<br>
+						<br>
+						.flex-main {<br>
+						&emsp;&emsp;&emsp;text-align: left;<br>
+						&emsp;&emsp;&emsp;background: #000000;<br>
+						&emsp;&emsp;&emsp;color: #ffffff;<br>
+						}<br>
+						.flex-main > p {<br>
+						&emsp;&emsp;&emsp;padding: .5em;<br>
+						}<br>
+						<br>
+						.aside-1 {<br>
+						&emsp;&emsp;&emsp;background: #c2986b;<br>
+						}<br>
+						<br>
+						.aside-2 {<br>
+						&emsp;&emsp;&emsp;background: #c2986b;<br>
+						}<br>
+					</code>
+				</section>
+				<section id="footerNav" class="example">
+					<a id="footerBtnAnimation" class="btn footerBtn" href="../Final%20Website/animations.html">Go back to 'Animations'</a>
+					<a class="btn footerBtn" href="../Final%20Website/hiddenNav.html">Move on to 'Hidden Nav'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>

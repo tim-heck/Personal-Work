@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The Cascading Style Sheet | Animations</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Lora" rel="stylesheet">
+  <link rel="icon" href="/Users/timheck/Desktop/Interactive%20Design/Final%20Website/Images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<section class="body">
+		<nav>
+			<a href="../Final%20Website/index.html">
+				<img class="logo" src="../Final%20Website/Images/TimLogo.svg">
+			</a>
+			<ul class="globalNav">
+				<input type="checkbox" id="beginCheckbox"/>
+				<ul class="dropdown" id="beginMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckbox"/>
+				<ul class="dropdown" id="advanceMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckbox"/>
+				<ul class="dropdown" id="expertMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+				<label class="navItem" for="beginCheckbox">Beginner</label>
+				<label class="navItem" for="advanceCheckbox">Advanced</label>
+				<label class="navItem" for="expertCheckbox">Expert</label>
+				<a class="navItem" href="../Final%20Website/about.html">About Me</a>
+				<a id="homeNavItem" class="navItem" href="../Final%20Website/home.html">Home</a>
+			</ul>
+			<div class="navbar">
+				<input type="checkbox" id="beginCheckboxSide"/>
+				<ul class="dropdown side" id="beginSideMenu">
+					<li><a href="../Final%20Website/buttons.html"><b>Buttons</b></a></li>
+					<li><a href="../Final%20Website/click.html"><b>Click</b></a></li>
+					<li><a href="../Final%20Website/hover.html"><b>Hover</b></a></li>
+					<li><a href="../Final%20Website/navbar.html"><b>Navbar</b></a></li>
+					<li><a href="../Final%20Website/shadow.html"><b>Shadow</b></a></li>
+				</ul>
+				<input type="checkbox" id="advanceCheckboxSide"/>
+				<ul class="dropdown side" id="advanceSideMenu">
+					<li><a href="../Final%20Website/footer.html"><b>Footer</b></a></li>
+					<li><a href="../Final%20Website/gradients.html"><b>Gradients</b></a></li>
+					<li><a href="../Final%20Website/hoverDropdown.html"><b>Hover Dropdown Menu</b></a></li>
+					<li><a href="../Final%20Website/transition.html"><b>Transition</b></a></li>
+				</ul>
+				<input type="checkbox" id="expertCheckboxSide"/>
+				<ul class="dropdown side" id="expertSideMenu">
+					<li><a href="../Final%20Website/animations.html"><b>Animations</b></a></li>
+					<li><a href="../Final%20Website/flexbox.html"><b>Flex-box</b></a></li>
+					<li><a href="../Final%20Website/hiddenNav.html"><b>Hidden Nav</b></a></li>
+					<li><a href="../Final%20Website/transforms.html"><b>Transforms</b></a></li>
+				</ul>
+
+				<input type="checkbox" id="checkboxNav"/>
+				<ul class="sidenav">
+					<label for="beginCheckboxSide"><b>Beginner</b></label>
+					<label for="advanceCheckboxSide"><b>Advanced</b></label>
+					<label for="expertCheckboxSide"><b>Expert</b></label>
+					<label for="aboutCheckboxSide"><a href="../Final%20Website/about.html"><b>About Me</b></a></label>
+					<label for="homeCheckboxSide"><a href="../Final%20Website/home.html"><b>Home</b></a></label>
+				</ul>
+				<section>
+					<label id="menu" for="checkboxNav">Menu</label>
+					<label id="close" for="checkboxNav">Close</label>
+				</section>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1 class="contentTitle">Animations</h1>
+			<section id="examples">
+				<section class="description">
+					<p class="more-info">Animations are very similar to transitions, but they do not need an action to make the animation happen.</p>
+				</section>
+				<section class="css" id="forAllCSS">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">CSS Applied to All Animations</h2>
+					<h3 style="margin-bottom:12px">*Note: Animations will not work on Internet Explorer 9 or earlier versions.</h3>
+					<code>
+						.animation {<br>
+						&emsp;&emsp;&emsp;width: 100%;<br>
+					    &emsp;&emsp;&emsp;height: 6em;<br>
+					    &emsp;&emsp;&emsp;background-color: #000000;<br>
+					    &emsp;&emsp;&emsp;color: #ffffff;<br>
+						}<br>
+						<br>
+						.animation > p {<br>
+						&emsp;&emsp;&emsp;padding: 1em;<br>
+						}<br>
+					</code>
+				</section>
+				<section class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Color Change Animation</h2>
+					<div id="animation1" class="animation"><p>Animation 1</p></div><br>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Color Change » HTML</h2>
+					<code>
+						&lt;div id="animation1" class="animation"&gt;&lt;p>Animation 1&lt;/p&gt;&lt;/div&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Color Change » CSS</h2>
+					<code>
+						#animation1 {<br>
+						&emsp;&emsp;&emsp;-webkit-animation-name: animation1; /* Safari */<br>
+					    &emsp;&emsp;&emsp;-webkit-animation-duration: 4s; /* Safari */<br>
+					    &emsp;&emsp;&emsp;animation-name: animation1;<br>
+					    &emsp;&emsp;&emsp;animation-duration: 4s;<br>
+					    &emsp;&emsp;&emsp;animation-iteration-count: infinite;<br>
+						}<br>
+						<br>
+						/* Safari */<br>
+						@-webkit-keyframes animation1 {<br>
+					    &emsp;&emsp;&emsp;from {background-color: #000000;}<br>
+					    &emsp;&emsp;&emsp;to {background-color: #c2986b;}<br>
+						}<br>
+						<br>
+						/* Standard syntax */<br>
+						@keyframes animation1 {<br>
+					    &emsp;&emsp;&emsp;from {background-color: #000000;}<br>
+					    &emsp;&emsp;&emsp;to {background-color: #c2986b;}<br>
+						}<br>
+					</code>
+				</section>
+				<section id="movingAnimation" class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Moving Animation</h2>
+					<div id="animation2" class="animation"><p>Animation 2</p></div><br>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Moving » HTML</h2>
+					<code>
+						&lt;div id="animation2" class="animation"&gt;&lt;p>Animation 2&lt;/p&gt;&lt;/div&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Moving » CSS</h2>
+					<code>
+						#animation2 {<br>
+						&emsp;&emsp;&emsp;position: relative;<br>
+					    &emsp;&emsp;&emsp;-webkit-animation-name: animation2; /* Safari */<br>
+					    &emsp;&emsp;&emsp;-webkit-animation-duration: 4s; /* Safari */<br>
+					    &emsp;&emsp;&emsp;animation-name: animation2;<br>
+					    &emsp;&emsp;&emsp;animation-duration: 4s;<br>
+					    &emsp;&emsp;&emsp;animation-iteration-count: infinite;<br>
+						}<br>
+						<br>
+						/* Safari */<br>
+						@-webkit-keyframes animation2 {<br>
+					    &emsp;&emsp;&emsp;0%   {top:0px;}<br>
+					    &emsp;&emsp;&emsp;50%  {top:12.5em;}<br>
+					    &emsp;&emsp;&emsp;100% {top:0px;}<br>
+						}<br>
+						<br>
+						/* Standard syntax */<br>
+						@keyframes animation2 {<br>
+					    &emsp;&emsp;&emsp;0%   {top:0px;}<br>
+					    &emsp;&emsp;&emsp;50%  {top:12.5em;}<br>
+					    &emsp;&emsp;&emsp;100% {top:0px;}<br>
+						}<br>
+					</code>
+				</section>
+				<section id="movingAnimation" class="example">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Moving and Color Animation</h2>
+					<div id="animation3" class="animation"><p>Animation 3</p></div><br>
+				</section>
+				<section class="html">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Moving and Color » HTML</h2>
+					<code>
+						&lt;div id="animation3" class="animation"&gt;&lt;p>Animation 3&lt;/p&gt;&lt;/div&gt;<br>
+					</code>
+				</section>
+				<section class="css">
+					<h2 class="contentSubtitle" style="margin-bottom:12px">Moving and Color » CSS</h2>
+					<code>
+						#animation3 {<br>
+						&emsp;&emsp;&emsp;position: relative;<br>
+					    &emsp;&emsp;&emsp;-webkit-animation-name: animation3; /* Safari */<br>
+					    &emsp;&emsp;&emsp;-webkit-animation-duration: 4s; /* Safari */<br>
+					    &emsp;&emsp;&emsp;animation-name: animation3;<br>
+					    &emsp;&emsp;&emsp;animation-duration: 4s;<br>
+					    &emsp;&emsp;&emsp;animation-iteration-count: infinite;<br>
+						}<br>
+						<br>
+						/* Safari */<br>
+						@-webkit-keyframes animation3 {<br>
+					    &emsp;&emsp;&emsp;0%   {background-color:#000000;left:0px;top:0px;}<br>
+					    &emsp;&emsp;&emsp;25%  {background-color:#c2986b;left:29em;top:0px;}<br>
+					    &emsp;&emsp;&emsp;50%  {background-color:#000000;left:29em;top:12.5em;}<br>
+					    &emsp;&emsp;&emsp;75%  {background-color:#c2986b;left:0px;top:12.5em;}<br>
+					    &emsp;&emsp;&emsp;100% {background-color:#000000;left:0px;top:0px;}<br>
+						}<br>
+						<br>
+						/* Standard syntax */<br>
+						@keyframes animation3 {<br>
+					   	&emsp;&emsp;&emsp;0%   {background-color:#000000;left:0px;top:0px;}<br>
+					    &emsp;&emsp;&emsp;25%  {background-color:#c2986b;left:29em;top:0px;}<br>
+					    &emsp;&emsp;&emsp;50%  {background-color:#000000;left:29em;top:12.5em;}<br>
+					    &emsp;&emsp;&emsp;75%  {background-color:#c2986b;left:0px;top:12.5em;}<br>
+					    &emsp;&emsp;&emsp;100% {background-color:#000000;left:0px;top:0px;}<br>
+						}<br>
+					</code>
+				</section>
+				<section id="footerNav" class="example">
+					<a class="btn footerBtn" href="../Final%20Website/transition.html">Go back to 'Transition'</a>
+					<a class="btn footerBtn" href="../Final%20Website/flexbox.html">Move on to 'Flex-Box'</a>
+				</section>
+			</section>
+		</div>
+
+		<footer>
+			<h6 class="footer"><a href="../Final%20Website/about.html">Contact Me</a> | <a href="https://www.instagram.com/timtheheck/" target="_blank">Follow Me on Instagram</a></h6>
+		</footer>
+	</section>
+</body>
+
+</html>
